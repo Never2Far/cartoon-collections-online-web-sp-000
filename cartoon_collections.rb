@@ -1,3 +1,5 @@
+require 'pry'
+
 def roll_call_dwarves(array)
   array.each_with_index { |name, index|
     puts "#{index + 1}.  #{name}"
@@ -15,6 +17,7 @@ def long_planeteer_calls(array)
 results = array.map { |string|
   string.length > 4 ? true : false
   }
+  binding.pry
 return results.include?(false)
 end
 
