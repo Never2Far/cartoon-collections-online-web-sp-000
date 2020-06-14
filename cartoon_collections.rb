@@ -11,10 +11,11 @@ def summon_captain_planet(array)
 end
 
 def long_planeteer_calls(array)
-array.find { |string|
+
+results = array.map { |string|
   string.length > 4 ? true : false
   }
-
+results.include?(false)
 end
 
 def find_the_cheese# code an argument here
