@@ -1,6 +1,6 @@
 require 'pry'
 
-long_planeteer_calls(array["two", "go", "industrious", "bop"])
+long_planeteer_calls(["two", "go", "industrious", "bop"])
 
 def roll_call_dwarves(array)
   array.each_with_index { |name, index|
