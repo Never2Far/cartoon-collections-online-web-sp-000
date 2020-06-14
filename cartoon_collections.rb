@@ -18,7 +18,12 @@ results = array.map { |string|
 return results.include?(true)
 end
 
-def find_the_cheese# code an argument here
-  # the array below is here to help
+def find_the_cheese(array)
+
+  array.find {|string|
+    (string == cheese_types[0]) || (string == cheese_types[1]) || (string == cheese_types[2])
+  }
+  
   cheese_types = ["cheddar", "gouda", "camembert"]
+  
 end
