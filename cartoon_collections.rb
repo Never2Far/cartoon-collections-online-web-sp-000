@@ -20,11 +20,10 @@ end
 
 def find_the_cheese(array)
 cheese_types = ["cheddar", "gouda", "camembert"]
-
+#array.any? { |i| not cheese_types.include?(i) }
   array.find {|string|
     (string == cheese_types[0]) || (string == cheese_types[1]) || (string == cheese_types[2])
   }
 
-  cheese_types = ["cheddar", "gouda", "camembert"]
 
 end
