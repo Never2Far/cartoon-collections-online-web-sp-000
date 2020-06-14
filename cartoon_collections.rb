@@ -15,7 +15,7 @@ def long_planeteer_calls(array)
 results = array.map { |string|
   string.length > 4 ? true : false
   }
-results.include?(false)
+return results.include?(false)
 end
 
 def find_the_cheese# code an argument here
