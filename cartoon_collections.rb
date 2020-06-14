@@ -11,8 +11,8 @@ def summon_captain_planet(array)
 end
 
 def long_planeteer_calls(array)
-array.find { |string|
-  string.length > 4 ? true : false
+array.include? { |string|
+  string.length > 4
 }
 end
 
