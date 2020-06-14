@@ -6,7 +6,7 @@ end
 
 def summon_captain_planet(array)
   array.map { |string|
-    return (string.capitalize << "!")
+    (string.capitalize << "!")
   }
 end
 
